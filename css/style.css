@@ -1,0 +1,69 @@
+body, div, ul, li{
+	margin:0;
+	padding:0;
+}
+
+/****************************** Header Start ****************************/
+header{
+	width:100%;
+	height:160px;/*topBanner+headerNav*/
+	overflow:hidden;/*超出部分隐藏*/
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+.topBanner{
+	width:100%;
+	height:120px;
+	background:url(../images/banner2.jpg) no-repeat center center;
+	background-size:cover;/*按图片比例放大图片或缩小，使图像覆盖背景区*/
+	cursor:pointer;
+}
+.headNav{
+	width:100%;
+	height:40px;
+	background-color:#19448e;
+}
+.headNavCenter{
+	width:1226px;
+	height:40px;
+	line-height:40px;/* line-height用来表示容器的高度,height用来表示这一容器内的每行文字的高度 */
+	margin:0 auto;/*0表示上下边界为0，auto表示左右根据宽度自适应相同值（即居中）*/
+}
+.headNavCenter ul{
+	float:left;
+}
+.headNavCenter ul li{
+	display:inline-block;/*纵向list变为横向块状*/
+}
+.headNavCenter ul li a, .shoppingCar span{
+	color:#bbc8e6;
+	transition:all 0.5s;
+	cursor:pointer;
+}
+.headNavCenter ul span{
+	color:#4d5aaf;
+	margin:0 0.5em;/*em指字体高，任意浏览器的默认字体高都是16px。所以未经调整的浏览器都符合: 1em=16px*/
+}
+.headNavCenter ul li a:hover, .shoppingCar span:hover{
+	color:#f7fcfe;
+}
+.login{
+	float:right;
+}
+.shoppingCar{
+	width:120px;
+	height:40px;
+	float:right;
+	background-color:#3e62ad;
+	padding-left:10px;
+	margin-left:-11px;
+}
+
+
+
+
+/****************************** Header End ****************************/
