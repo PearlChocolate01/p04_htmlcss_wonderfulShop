@@ -1,6 +1,11 @@
 @font-face {
   font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1677570125393') format('truetype'); /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  src: url('iconfont-gouwuchekong.ttf?t=1677570125393&t=1677650333184') format('truetype');
+  /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+}
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont-wxbsousuotuiguang.ttf?t=1677650333184') format('truetype');
 }
 
 .iconfont {
@@ -13,5 +18,9 @@
 
 .icon-gouwuchekong:before {
   content: "\e600";
+}
+
+.icon-wxbsousuotuiguang:before {
+  content: "\e620";	
 }
 

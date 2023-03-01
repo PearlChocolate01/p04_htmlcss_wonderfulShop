@@ -2,18 +2,17 @@ body, div, ul, li{
 	margin:0;
 	padding:0;
 }
-
-/****************************** Header Start ****************************/
-header{
-	width:100%;
-	height:160px;/*topBanner+headerNav*/
-	overflow:hidden;/*超出部分隐藏*/
-}
 li{
 	list-style:none;
 }
 a{
 	text-decoration:none;
+}
+/****************************** Header Start ****************************/
+header{
+	width:100%;
+	height:160px;/*topBanner+headerNav*/
+	overflow:hidden;/*超出部分隐藏*/
 }
 .topBanner{
 	width:100%;
@@ -62,8 +61,99 @@ a{
 	padding-left:10px;
 	margin-left:-11px;
 }
-
-
-
-
 /****************************** Header End ****************************/
+/****************************** Nav Start ****************************/
+nav{
+	width:1226px;
+	height:100px;
+	margin:0 auto;
+}
+.logo{
+	margin-top:22px;
+	float:left;
+	cursor:pointer;
+}
+.logo img{
+	width:60px;
+	height:60px;
+}
+.bodyNav ul{
+	width:790px;
+	float:left;
+	margin-left:50px;
+	line-height:100px;
+}
+.bodyNav ul li{
+	display:inline-block;
+	height:80px;
+	padding:0 10px;
+	transition:all 0.2s;
+}
+.bodyNav ul li:hover{
+	border-bottom:3px solid #1e50a2;
+}
+.bodyNav ul li a{
+	color:#778899;
+}
+.bodyNav .search{
+	float:right;
+	line-height:100px;
+	margin-top:25px;
+	position:relative;
+	font-size:0;
+	display:inline-block;
+}
+.bodyNav .search .hotWords{
+	width:177px;
+	position:absolute;
+	top:-25px;
+	height:0;
+	right:60px;
+	display:inline-block;
+}
+.bodyNav .search .hotWords a{
+	font-size:12px;
+	margin-left:5px;
+	padding:0 5px;
+	color:#0073a8;
+	background-color:#bbe2f1;
+	transition:all 0.3s;
+}
+.bodyNav .search .hotWords a:hover{
+	background-color:#5654a2;
+	color:#fff;
+}
+.bodyNav .search input[type="search"]{
+	width:240px;
+	height:50px;
+	border:1px solid #89c3eb;
+	float:left;
+	transition:all 0.3s;
+}
+.bodyNav .search input[type="search"]:hover{
+	border:1px solid #bbe2f1;
+}
+.bodyNav .search input[type="search"]:focus{
+	border:1px solid #19448e;
+	outline:none;/*去除input选中后的黑框*/
+	color:#19448e;
+	font-size:16px;
+}
+.bodyNav .search input[type="submit"]{
+	width:50px !important;
+	height:50px !important;
+	border:1px solid #89c3eb;
+	border-left:none;
+	background-color: #fff;
+	top:0;
+	right:0;
+	float:right;
+	color:#89c3eb;
+	font-size:25px;
+	transition:all 0.3s;
+}
+.bodyNav .search input[type="submit"]:hover{
+	background-color:#89c3eb;
+	color:#fff;
+}
+/****************************** Nav End ****************************/
