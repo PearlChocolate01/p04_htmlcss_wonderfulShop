@@ -17,7 +17,7 @@ header{
 .topBanner{
 	width:100%;
 	height:120px;
-	background:url(../images/banner2.jpg) no-repeat center center;
+	background:url(../images/topBanner3.jpg) no-repeat center center;
 	background-size:cover;/*按图片比例放大图片或缩小，使图像覆盖背景区*/
 	cursor:pointer;
 }
@@ -151,9 +151,168 @@ nav{
 	color:#89c3eb;
 	font-size:25px;
 	transition:all 0.3s;
+	cursor:pointer;
 }
 .bodyNav .search input[type="submit"]:hover{
 	background-color:#89c3eb;
 	color:#fff;
 }
 /****************************** Nav End ****************************/
+/****************************** Banner Head ****************************/
+.banner{
+	width:1226px;
+	height:460px;
+	margin:0 auto;
+	position:relative;/*不会对这个元素本身有任何影响，只影响加了absolute的子元素*/
+	overflow:hidden;
+}
+.bannerPic{
+	width:7356px;/*1226*6 更宽一点也可以*/
+	height:460px;
+	animation:move 30s linear infinite;/*轮播图无限滚动*/
+}
+.bannerPic:hover{
+	animation-play-state:paused;
+}
+@keyframes move{
+	0%{
+		margin-left:0;
+	}
+	15%{
+	    margin-left:0;
+	}
+	20%{
+		margin-left:-1226px;
+	}
+	35%{
+	    margin-left:-1226px;
+	}
+	40%{
+		margin-left:-2452px;
+	}
+	55%{
+	    margin-left:-2452px;
+	}
+	60%{
+		margin-left:-3678px;
+	}
+	75%{
+	    margin-left:-3678px;
+	}
+	80%{
+	    margin-left:-4904px;
+	}
+	95%{
+	    margin-left:-4904px;
+	}
+	100% {
+	    margin-left:-6130px;
+	}
+}
+.bannerPic img{
+	float:left;
+	width:1226px;
+	height:460px;
+	object-fit:cover;/*保证图片原比例拉伸*/
+	overflow:hidden;
+}
+.bannerDot{
+	position:absolute;
+	bottom:15px;/*相对于父元素banner的底部15px*/
+	right:30px;
+}
+.bannerDot span{
+	width:6px;
+	height:6px;
+	border-radius:50%;
+	display:inline-block;
+	border:2px solid #89c3eb;
+	background-color:#19448e;
+	transition:all 0.3s;
+	margin:0 3px;
+	opacity:0.7;
+}
+.bannerDot span:hover, .bannerDot span:first-of-type{
+	border:2px solid #19448e;
+	background-color:#89c3eb;
+}
+.menu{
+	position:absolute;/*相对于父元素定位*/
+	top:0;
+	left:0;
+	width:234px;
+	height:460px;
+	background-color:rgba(0,30,67,0.7);
+}
+.menu ul{
+	height:420px;
+	padding-top:20px;
+}
+.menu ul li{
+	position:relative;
+	cursor: pointer;
+	height:70px;
+	padding-left:15px;
+}
+.menu ul li:hover{
+	background-color:#7a99cf;
+}
+.menu ul li a{
+	color: #f7f6fb;
+	line-height:70px;
+	text-align:center;
+	font-family:'Agency FB';
+	font-size:23px;
+}
+.menu ul li span{
+	position:absolute;
+	right:15px;
+	color:#89c3eb;
+	line-height:70px;
+	text-align:center;
+}
+/****************************** Banner End ****************************/
+/****************************** View Start ****************************/
+.view{
+	width:1226px;
+	height:170px;
+	margin:0 auto;
+	margin-top:20px;
+}
+.view .help{
+	float:left;
+	width:234px;
+	height:170px;
+	overflow:hidden;
+	text-align:center;
+}
+.view .help li{
+	float:left;
+	width:78px;
+	height:85px;
+	background-color:#6c9bd2;
+	color:#bbe2f1;
+	box-sizing:border-box;/*border变为内边框*/
+	border:0.5px solid #94adda;
+}
+.view .help li span{
+	height:24px;
+	line-height:24px;
+	display:block;
+	margin-top:20px;
+}
+.view .viewCg{
+	float:left;
+	width:992px;
+	height:170px;
+	margin:0;
+	overflow:hidden;
+}
+.view .viewCg img{
+	float:left;
+	width:310px;
+	height:170px;
+	object-fit:cover;
+	margin-left:20px;
+}
+/****************************** View End ****************************/
