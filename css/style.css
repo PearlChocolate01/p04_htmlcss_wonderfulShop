@@ -1,4 +1,7 @@
-body, div, ul, li{
+/* *{
+	outline:1px solid red;
+} */
+body, div, ul, li, h1, h2, h3, h4, h5, h6, p{
 	margin:0;
 	padding:0;
 }
@@ -118,6 +121,7 @@ nav{
 	color:#0073a8;
 	background-color:#bbe2f1;
 	transition:all 0.3s;
+	border-radius:4px;
 }
 .bodyNav .search .hotWords a:hover{
 	background-color:#5654a2;
@@ -231,6 +235,7 @@ nav{
 	transition:all 0.3s;
 	margin:0 3px;
 	opacity:0.7;
+	cursor:pointer;
 }
 .bannerDot span:hover, .bannerDot span:first-of-type{
 	border:2px solid #19448e;
@@ -271,6 +276,31 @@ nav{
 	line-height:70px;
 	text-align:center;
 }
+.banner .bigArrow{
+	position:absolute;
+	top:190px;
+	width:55px;
+	height:80px;
+	font-size:70px;
+	line-height:80px;
+	text-align:center;
+	opacity:0.6;
+	padding-right:10px;
+	transition:all 0.3s;
+}
+.banner .bigArrow:nth-of-type(1){
+	left:234px;
+}
+.banner .bigArrow:nth-of-type(2){
+	right:0;
+}
+.banner .bigArrow:hover{
+	background-color:#164a84;
+	color:#89c3eb;
+	opacity:0.7;
+	cursor:pointer;
+	border-radius:10px;
+}
 /****************************** Banner End ****************************/
 /****************************** View Start ****************************/
 .view{
@@ -294,12 +324,14 @@ nav{
 	color:#bbe2f1;
 	box-sizing:border-box;/*border变为内边框*/
 	border:0.5px solid #94adda;
+	cursor:pointer;
 }
 .view .help li span{
 	height:24px;
 	line-height:24px;
 	display:block;
 	margin-top:20px;
+	font-size:20px;
 }
 .view .viewCg{
 	float:left;
@@ -314,5 +346,151 @@ nav{
 	height:170px;
 	object-fit:cover;
 	margin-left:20px;
+	cursor:pointer;
 }
 /****************************** View End ****************************/
+/****************************** Role Start ****************************/
+.role{
+	width:1226px;
+	height:500px;
+	margin:30px auto;
+	overflow:hidden;
+	/* background-color:red; */
+}
+.role .title{
+	width:1226px;
+	height:30px;
+	position:relative;
+}
+.role .title h2{
+	width:100px;
+	line-height:30px;
+	text-align:center;
+	font-family:'幼圆';
+	color:#5383c3;
+	position:absolute;
+	top:0;
+	left:0;
+	margin:0;
+}
+.role span{
+	line-height:25px;
+	text-align:center;
+	padding:auto 0;
+	width:45px;
+	height:25px;
+	border:1px solid #89c3eb;
+	position:absolute;
+	top:2px;
+	cursor:pointer;
+	color:#89c3eb;
+	font-size:20px;
+	transition:all 0.3s;
+}
+.role span:hover{
+	background-color:#89c3eb;
+	color:#fff;
+}
+.role span:nth-of-type(1){
+	right:0;
+}
+.role span:nth-of-type(2){
+	right:45px;
+}
+/* .role span:nth-of-type(2):hover{
+	animation:moveRole 1.5s ease-in-out normal alternate;
+	margin-left:-812px; 
+} 
+ @keyframes moveRole{
+	100%{
+		margin-left:-812px;
+	}
+} */
+
+/*图片div*/
+.role ul{
+	margin-top:10px;
+	width:2452px;
+	height:470px;
+	overflow:hidden;
+	transition:all 0.3s;
+}
+.role ul li{
+	width:396px;
+	height:470px;
+	margin:0 10px;
+	display:inline-block;
+	background-color:#f5f5f5;
+	border-top:2px solid #4169e1;
+	float:left;/*解决div不贴合上边界*/
+}
+.role ul li:nth-of-type(1){
+	margin-left:0;
+}
+.role ul li:nth-of-type(2n+1){
+	border-top:2px solid #8d6449;
+}
+.role ul li .rolePic{
+	width:100%;
+	height:70%;
+	position:relative;
+}
+.role ul li .rolePic img{
+	width:70%;
+	height:90%;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	object-fit:cover;
+	cursor:pointer;
+	transition:all 0.2s;
+}
+.role ul li .rolePic img:hover{
+	transform:translate(-50%,-50%) scale(1.05);
+	box-shadow:1px 1px 5px rgba(0,0,0,.5);
+	position:absolute;/*hover也要再写一遍*/
+	top:50%;
+	left:50%;
+}
+.role ul li h3{
+	font-size:15px;
+	width:fit-content;
+	margin:0 auto;
+	text-align:center;
+	font-family:'等线 Light';
+	padding:2px 0;
+	color:#8b4513;
+	cursor:pointer;
+	position:relative;
+}
+.role ul li h3:before{
+	content:'';
+	width:0;
+	height:1.5px;
+	position:absolute;
+	left:50%;
+	bottom:-1px;
+	background:#8b4513;
+	transition:all 0.3s;
+}
+.role ul li h3:hover:before{
+	width:100%;
+	left:0;
+	right:0;
+}
+@keyframes underlineOpen{
+	0%{
+		text-decoration:none;
+	}
+	100%{
+		text-decoration:underline;
+	}
+}
+.role ul li p{
+	width:70%;
+	margin:2px auto;
+	font-size:14px;
+	color:#8b968d; 
+}
+/****************************** Role End ****************************/
