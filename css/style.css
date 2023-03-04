@@ -325,6 +325,10 @@ nav{
 	box-sizing:border-box;/*border变为内边框*/
 	border:0.5px solid #94adda;
 	cursor:pointer;
+	transition:all 0.3s;
+}
+.view .help li:hover{
+	color:#fff;
 }
 .view .help li span{
 	height:24px;
@@ -348,6 +352,9 @@ nav{
 	margin-left:20px;
 	cursor:pointer;
 }
+.view .viewCg img:hover{
+	/* transform: */
+}
 /****************************** View End ****************************/
 /****************************** Role Start ****************************/
 .role{
@@ -355,7 +362,6 @@ nav{
 	height:500px;
 	margin:30px auto;
 	overflow:hidden;
-	/* background-color:red; */
 }
 .role .title{
 	width:1226px;
@@ -397,6 +403,10 @@ nav{
 .role span:nth-of-type(2){
 	right:45px;
 }
+/* .role span:hover .role ul{
+	left:-812px; 
+	background-color:black;
+} */
 /* .role span:nth-of-type(2):hover{
 	animation:moveRole 1.5s ease-in-out normal alternate;
 	margin-left:-812px; 
@@ -414,6 +424,7 @@ nav{
 	height:470px;
 	overflow:hidden;
 	transition:all 0.3s;
+	/* left:0; */
 }
 .role ul li{
 	width:396px;
@@ -494,3 +505,154 @@ nav{
 	color:#8b968d; 
 }
 /****************************** Role End ****************************/
+/****************************** MainBody Start ****************************/
+.mainBody{
+	background-color:#f0f8ff;
+}
+.books, .sale{
+	width:1226px;
+	height:750px;
+	overflow:hidden;
+	margin:10px auto;
+}
+.books .title, .sale .title{
+	width:1226px;
+	height:30px;
+	margin-top:80px;
+	margin-bottom:20px;
+}
+.sale .title{
+	margin-top:25px;
+}
+.books .title h2, .sale .title h2{
+	width:100px;
+	line-height:30px;
+	text-align:center;
+	font-family:'幼圆';
+	color:#5383c3;
+	float:left;
+}
+.books .title p, .sale .title p{
+	float:right;
+	cursor:pointer;
+}
+.books .title p span, .sale .title p span{
+	margin-left:10px;
+	width:15px;
+	height:15px;
+	border-radius:50%;
+	background-color:#5383c3;
+	color:#eaf4fc;
+	padding:2px 2px;
+	font-size:12px;
+}
+.books .aside, .sale .aside{
+	width:200px;
+	height:600px;
+	float:left;
+}
+.sale .aside{
+	float:right;
+}
+.books .aside img, .sale .aside img{
+	width:100%;
+	height:100%;
+	object-fit:cover;
+}
+.books ul, .sale ul{
+	width:1026px;
+	height:600px;
+	overflow:hidden;
+	float:right;
+}
+.sale ul{
+	float:left;
+}
+.books ul li, .sale ul li{
+	display:inline-block;
+	margin-left:32px;
+	margin-bottom:20px;
+	width:310px;
+	height:290px;
+	background-color:#fff;
+	/* box-shadow:1px 1px 5px rgba(0,0,0,0.3); */
+	float:left;
+	overflow:hidden;
+	position:relative;
+}
+.sale ul li{
+	margin-left:0;
+	margin-right:32px;
+	transition:all 0.3s;
+	/* overflow:visible; */
+}
+.sale ul li:hover{
+	transform:scale(1.05);
+	box-shadow:1px 1px 5px rgba(0,0,0,0.3);
+}
+.books ul li img, .sale ul li img{
+	height:70%;
+	margin:10px auto;
+	margin-top:25px;
+	object-fit:cover;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.books ul li h3, .books ul li h4, .sale ul li h3, .sale ul li h4{
+	width:fit-content;
+	text-align:center;
+	font-family:'等线 Light';
+	color:#19448e;
+	margin:3px auto;
+}
+.books ul li h3, .sale ul li h3
+{
+	font-size:14px;
+}
+.books ul li h4, .sale ul li h4
+{
+	font-size:12px;
+}
+.books ul li .bookDesc, .books ul li .bookPara{
+	width:100%;
+	height:100%;
+	position:absolute;
+	transition:.5s;
+}
+.books ul li .bookDesc{
+	top:0;
+	left:0;
+}
+.books ul li .bookPara{
+	background-color:#be8f68;
+	top:0;
+	left:100%;
+	color:#e9dacb;
+}
+.books ul li:hover .bookDesc{
+	top:0;
+	left:-100%;
+}
+.books ul li:hover .bookPara{
+	top:0;
+	left:0;
+}
+.books ul li .bookPara h3{
+	margin-top:20px;
+	margin-left:20px;
+	color:#e9dacb;
+}
+.books ul li .bookPara hr{
+	width:90%;
+	height:3px;
+	border-radius:50%;
+	background-color:#e9dacb;
+	border:0;
+}
+.books ul li .bookPara p{
+	text-align:center;
+	margin:20px 25px;
+}
+/****************************** MainBody End ****************************/
+
