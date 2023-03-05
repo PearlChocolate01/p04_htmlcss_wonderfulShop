@@ -19,6 +19,15 @@
   font-family: "iconfont"; /* Project id  */
   src: url('iconfont-download.ttf?t=1677736200823') format('truetype');
 }
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont-footer.ttf?t=1677999527809') format('truetype');
+}
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont-play.ttf?t=1678020536503') format('truetype');
+}
+
 
 .iconfont {
   font-family: "iconfont" !important;
@@ -66,4 +75,28 @@
 
 .icon-xiazai:before {
   content: "\e518";
+}
+
+.icon-newshot:before {
+  content: "\e7c5";
+}
+
+.icon-iconfontzhizuobiaozhunbduan27:before {
+  content: "\e6e1";
+}
+
+.icon-ziliaoshouce-xianxing:before {
+  content: "\e898";
+}
+
+.icon-navicon-wzgl:before {
+  content: "\e661";
+}
+
+.icon-yinle:before {
+  content: "\e601";
+}
+
+.icon-bofang:before {
+  content: "\e543";
 }
