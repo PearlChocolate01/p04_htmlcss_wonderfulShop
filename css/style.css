@@ -5,6 +5,9 @@ body, div, ul, li, h1, h2, h3, h4, h5, h6, p{
 	margin:0;
 	padding:0;
 }
+body{
+	min-width: 1226px;
+}
 li{
 	list-style:none;
 }
@@ -738,17 +741,18 @@ nav{
 }
 /****************************** MainBody End ****************************/
 /****************************** Footer Start ****************************/
-.about{
+footer{
 	width:100%;
 	height:500px;
 	background-color:#68a9cf;
+	position:sticky;/*使img偏右*/
 }
-.about img{
+footer img{
 	height:500px;
 	position:absolute;
 	right:0;
 }
-.about .links{
+footer .links{
 	width:55%;
 	height:500px;
 	color:#bccddb;
@@ -756,7 +760,7 @@ nav{
 	position:absolute;
 	z-index:5;/*z-index生效的办法是清除浮动*/
 }
-.about .links ul{
+footer .links ul{
 	margin-top:60px;
 	margin-left:10%;
 	width:30%;
@@ -765,7 +769,7 @@ nav{
 	left:0;
 	top:20px;
 }
-.about .links ul li{
+footer .links ul li{
 	height:50px;
 	text-align:center;
 	font-size:20px;
@@ -775,14 +779,14 @@ nav{
 	transition:all 0.3s;
 	cursor:pointer;
 }
-.about .links ul li:hover{
+footer .links ul li:hover{
 	color:#fff;
 }
-.about .links ul li span{
+footer .links ul li span{
 	margin-right:10px;
 	font-size:35px;
 }
-.about .links .survey{
+footer .links .survey{
 	margin-top:70px;
 	height:350px;
 	position:absolute;
@@ -790,27 +794,27 @@ nav{
 	right:0;
 	margin-left:5%
 }
-.about .links .survey dl{
+footer .links .survey dl{
 	width:45%;
 	height:150px;
 	display:inline-block;
 }
-.about .links .survey dl dt{
+footer .links .survey dl dt{
 	text-decoration:underline;
 	font-size:20px;
 	color:#fff;
 	font-family:'Agency FB';
 }
-.about .links .survey dl dd{
+footer .links .survey dl dd{
 	cursor:pointer;
 	transition:all 0.3s;
 	width:fit-content;
 	margin:10px;
 }
-.about .links .survey dl dd:hover{
+footer .links .survey dl dd:hover{
 	color:#fff;
 }
-.about .slogan{
+footer .slogan{
 	font-size:25px;
 	width:100%;
 	height:40px;
@@ -823,7 +827,7 @@ nav{
 	color:#89c3eb;
 	transition:all 0.5s;
 }
-.about .slogan:hover{
+footer .slogan:hover{
 	color:#fff;
 }
 /****************************** Footer End ****************************/
